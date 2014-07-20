@@ -21,8 +21,7 @@ Solutions will be evaluated on the following criteria, in order:
 3. Correctly and completely implementing the specified functionality
 
 
-Restrictions
-------------
+### Restrictions
 
 Use "vanilla" JavaScript only -- no other third-party plugins, libraries, or frameworks.
   

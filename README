@@ -1,18 +1,14 @@
-GoHealth JavaScript Exercise
-============================
+GoHealth Coding Challenge
+===========================
 
-
-Welcome to the GoHealth JavaScript Exercise! Please read these instructions carefully. Email your GoHealth Technical Recruiter with any questions you have, and with a zip file of your solution once complete.
-
-
-Requirements
-------------
+### Challenge: toRoman()
 
 Extend JavaScript's native Number type with a toRoman() method that provides a Roman numeral representation of the value if it is between 0 and 3999. For example:
 
-    > var currentYear = 2014;
-    > currentYear.toRoman();
-      "MMXIV"
+```
+var currentYear = 2014;
+currentYear.toRoman(); // will return "MMXIV"
+```
 
 There are two main components: the toRoman() code itself, and the supporting unit tests.
 
@@ -20,39 +16,16 @@ You can write the toRoman() code in src/roman.js, and a Jasmine-based test suite
 
 Solutions will be evaluated on the following criteria, in order:
 
-    1. Code design and construction
-    2. Code readability and useful comments
-    3. Correctly and completely implementing the specified functionality
+1. Code design and construction
+2. Code readability and useful comments
+3. Correctly and completely implementing the specified functionality
 
 
 Restrictions
 ------------
 
 Use "vanilla" JavaScript only -- no other third-party plugins, libraries, or frameworks.
+  
+--
 
-
-An Explanation of Roman Numerals
---------------------------------
-
-[Courtesy of Wikipedia at http://en.wikipedia.org/wiki/Roman_numerals. Please feel free to read further, but note that the "alternative forms" explained in the opening section are not in scope for this exercise and can be ignored.]
-
-Roman numerals employs combinations of letters from the Latin alphabet to signify values:
-
-    Symbol  Value
-    I           1
-    V           5
-    X          10
-    L          50
-    C         100
-    D         500
-    M       1,000
-
-Numbers are formed by combining symbols and adding the values. So II is two ones, i.e. 2, and XIII is a ten and three ones, i.e. 13. There is no zero in this system, so 207, for example, is CCVII, using the symbols for two hundreds, a five and two ones. 1066 is MLXVI, one thousand, fifty and ten, a five and a one.
-
-Symbols are placed from left to right in order of value, starting with the largest. However, in a few specific cases, to avoid four characters being repeated in succession (such as IIII or XXXX) these can be reduced using subtractive notation as follows:
-
-    - the numeral I can be placed before V and X to make 4 units (IV) and 9 units (IX respectively)
-    - X can be placed before L and C to make 40 (XL) and 90 (XC respectively)
-    - C can be placed before D and M to make 400 (CD) and 900 (CM) according to the same pattern
-
-An example using the above rules would be 1904: this is composed of 1 (one thousand), 9 (nine hundreds), 0 (zero tens), and 4 (four units). To write the Roman numeral, each of the non-zero digits should be treated separately. Thus 1,000 = M, 900 = CM, and 4 = IV. Therefore, 1904 is MCMIV.
+&copy; 2014 [kurtpeters.com](http://kurtpeters.com/)
